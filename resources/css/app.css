@@ -3,13 +3,20 @@
 }
 .image-preview {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 10px;
+    max-height: 400px;
+    overflow: auto;
 }
   
 .preview-item {
+    flex: 0 0 auto;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.img-thumbnail {
+    max-height: 100px;
 }
   
 .ql-container {

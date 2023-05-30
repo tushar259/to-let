@@ -11,13 +11,13 @@
             <div class="form-group">
                 <label for="description">Description:</label>
                 <div ref="quillContainer"></div>
-                <textarea class="form-control d-none" id="description" v-model="room.description" required></textarea>
+                <!-- <textarea class="form-control d-none" id="description" v-model="room.description" required></textarea> -->
                 <!-- <input type="hidden" v-model="room.description" required> -->
             </div>
     
             <div class="form-group">
                 <label for="images">Images:</label>
-                <input type="file" class="form-control-file" id="images" ref="imageInput" @change="handleImageUpload" multiple required>
+                <input type="file" class="form-control-file" id="images" ref="imageInput" @change="handleImageUploadSecond" multiple required>
                 <div class="image-preview">
                     <div v-for="(image, index) in room.images" :key="index" class="preview-item">
                         <img :src="image.url" class="img-thumbnail" alt="Preview Image">
@@ -94,7 +94,7 @@
                 this.room.description = this.quill.root.innerHTML;
             },
 
-            handleImageUpload(event) {
+            handleImageUploadSecond(event) {
                 const files = Array.from(event.target.files);
         
                 files.forEach(file => {
