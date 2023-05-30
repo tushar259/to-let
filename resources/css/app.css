@@ -1,0 +1,22 @@
+.navbar-light {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+  
+.preview-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
+.ql-container {
+    min-height: 150px;
+}
+
+.content {
+    margin: 20px;
+}
+
